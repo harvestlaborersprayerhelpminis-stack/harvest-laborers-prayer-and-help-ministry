@@ -5,92 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvest Laborers Prayer and Help Ministry</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
         }
         header {
             background: #1a365d;
             color: #ffffff;
-            padding: 20px 10px;
+            padding: 25px 15px;
             text-align: center;
         }
+        header img {
+            max-width: 130px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            margin-bottom: 10px;
+        }
         header h1 {
-            margin: 0;
+            margin: 5px 0;
             font-size: 24px;
+        }
+        header p {
+            margin: 0;
+            font-size: 15px;
+            color: #cbd5e0;
         }
         nav {
             background: #2b6cb0;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         nav a {
             color: white;
-            padding: 12px 20px;
+            padding: 10px 14px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 13px;
         }
         nav a:hover {
             background: #1a365d;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 15px auto;
             padding: 20px;
             background: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         h2 {
             color: #1a365d;
             border-bottom: 2px solid #2b6cb0;
             padding-bottom: 5px;
+            margin-top: 0;
+            font-size: 20px;
         }
+        .verse {
+            font-style: italic;
+            color: #4a5568;
+            background: #edf2f7;
+            padding: 8px 12px;
+            border-left: 4px solid #2b6cb0;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .area-box {
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+        .area-box h3 {
+            margin: 5px 0;
+            color: #2b6cb0;
+            font-size: 16px;
+        }
+        /* Social Media Buttons Styling */
+        .social-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .social-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .whatsapp { background-color: #25d366; }
+        .facebook { background-color: #1877f2; }
+        .youtube { background-color: #ff0000; }
+        .instagram { background-color: #e1306c; }
+        .threads { background-color: #000000; }
+        .tiktok { background-color: #000000; }
+
         footer {
             text-align: center;
             padding: 15px;
             background: #1a365d;
             color: white;
             margin-top: 30px;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- Logo Image -->
+        <img src="logo.jpg" alt="Ministry Logo" onerror="this.style.display='none'">
         <h1>Harvest Laborers Prayer and Help Ministry</h1>
         <p>Serving God & Helping People</p>
     </header>
 
+    <!-- Navigation Menu -->
     <nav>
+        <a href="#home">Home</a>
         <a href="#about">About Us</a>
-        <a href="#services">Our Services</a>
+        <a href="#faith">Statement of Faith</a>
+        <a href="#areas">Working Areas</a>
+        <a href="#social">Social Media</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reports">Monthly Reports</a>
+        <a href="#prayer">Prayer Requests</a>
         <a href="#contact">Contact Us</a>
+        <a href="#donate">Donate</a>
     </nav>
 
+    <!-- 1. Home -->
+    <div class="container" id="home">
+        <h2>1. Home (Ministry کا تعارف)</h2>
+        <p>Welcome to <strong>Harvest Laborers Prayer and Help Ministry</strong>.</p>
+        <p><strong>Our Main Goal:</strong> Our service is not limited to physical help, but to the preaching of the Gospel of Christ, love, freedom, and hope.</p>
+        <div class="verse">“Therefore go and make disciples of all nations...” (Matthew 28:19–20)</div>
+    </div>
+
+    <!-- 2. About Us -->
     <div class="container" id="about">
-        <h2>About Our Ministry</h2>
-        <p>Welcome to Harvest Laborers Prayer and Help Ministry. We are dedicated to prayer, spreading God's love, and serving communities in need.</p>
+        <h2>2. About Us (Vision اور Mission)</h2>
+        <p><strong>Vision:</strong> To transform lives through spiritual guidance, prayer, and practical help to vulnerable communities.</p>
+        <p><strong>Mission:</strong> Reaching out to children, widows, and families in need with spiritual support, education, and relief assistance.</p>
     </div>
 
-    <div class="container" id="services">
-        <h2>Our Key Work</h2>
-        <ul>
-            <li>Prayer Support & Counselling</li>
-            <li>Community Outreach & Social Help</li>
-            <li>Spiritual Guidance & Fellowship</li>
-        </ul>
+    <!-- 3. Statement of Faith -->
+    <div class="container" id="faith">
+        <h2>3. Statement of Faith</h2>
+        <p>We believe in the power of God, divine love, prayer, and living in fellowship to serve humanity according to Biblical principles.</p>
     </div>
 
+    <!-- 4. In What Areas Will We Work? -->
+    <div class="container" id="areas">
+        <h2>4. In What Areas Will We Work?</h2>
+
+        <div class="area-box">
+            <h3>1. Food Support</h3>
+            <p>Supporting families deprived of daily bread through ration distribution (flour, rice, lentils, oil). Special help for widows and orphans.</p>
+            <div class="verse">“He who has a good eye will be blessed...” (Proverbs 22:9)</div>
+        </div>
+
+        <div class="area-box">
+            <h3>2. Children’s Education</h3>
+            <p>Providing Christian education so no child's future is stolen by poverty.</p>
+            <div class="verse">“Train up a child in the way he should go...” (Proverbs 22:6)</div>
+        </div>
+
+        <div class="area-box">
+            <h3>3. Help for the Poor and Helpless</h3>
+            <p>Standing with widows, orphans, and disabled individuals.</p>
+            <div class="verse">“Do justice to the poor and orphans...” (Psalm 82:3)</div>
+        </div>
+
+        <div class="area-box">
+            <h3>4. Help for Prisoners and the Oppressed</h3>
+            <p>Supporting those falsely prosecuted, burdened by debt, or oppressed.</p>
+            <div class="verse">“To proclaim liberty to the captives...” (Isaiah 61:1; Luke 4:18)</div>
+        </div>
+
+        <div class="area-box">
+            <h3>5. Dowry Support</h3>
+            <p>Helping poor girls with essential household goods so they can begin married life with dignity.</p>
+            <div class="verse">“God sets the lonely in families...” (Psalm 68:6)</div>
+        </div>
+
+        <div class="area-box">
+            <h3>6. Above All: Preaching the Word of God</h3>
+            <p>Every act of help includes prayer and sharing the Gospel of Jesus Christ everywhere.</p>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="container" id="social">
+        <h2>Connect With Us on Social Media</h2>
+        <p>Follow <strong>Disciples of Christ Network</strong> on social media to stay updated with our latest ministry work, prayers, and videos:</p>
+        
+        <div class="social-container">
+            <a href="https://wa.me/923486052881" class="social-btn whatsapp" target="_blank">💬 WhatsApp</a>
+            <a href="https://www.facebook.com/share/1EuSDtsRBT/" class="social-btn facebook" target="_blank">📘 Facebook</a>
+            <a href="https://www.youtube.com/results?search_query=disciples+of+christ+network" class="social-btn youtube" target="_blank">▶️ YouTube</a>
+            <a href="https://www.instagram.com/disciplesofchristnetwork" class="social-btn instagram" target="_blank">📸 Instagram</a>
+            <a href="https://www.threads.net/@disciplesofchristnetwork" class="social-btn threads" target="_blank">🧵 Threads</a>
+            <a href="https://www.tiktok.com/search?q=disciples%20of%20christ%20network" class="social-btn tiktok" target="_blank">🎵 TikTok</a>
+        </div>
+    </div>
+
+    <!-- 5. Gallery -->
+    <div class="container" id="gallery">
+        <h2>5. Gallery (تصاویر اور ویڈیوز)</h2>
+        <p><em>Ministry activity photos and videos will be updated here regularly.</em></p>
+    </div>
+
+    <!-- 6. Monthly Reports -->
+    <div class="container" id="reports">
+        <h2>6. Monthly Reports (رپورٹس اور مالی منسٹری)</h2>
+        <p><em>Monthly updates, ministry work reports, and financial transparency summaries will be shared here.</em></p>
+    </div>
+
+    <!-- 7. Prayer Requests -->
+    <div class="container" id="prayer">
+        <h2>7. Prayer Requests</h2>
+        <p>Do you need prayer? Contact us directly or message us on WhatsApp with your prayer request. We are here to pray for you!</p>
+        <a href="https://wa.me/923486052881" class="social-btn whatsapp" target="_blank">💬 Send Prayer Request on WhatsApp</a>
+    </div>
+
+    <!-- 8. Contact Us -->
     <div class="container" id="contact">
-        <h2>Contact Us</h2>
+        <h2>8. Contact Us</h2>
+        <p><strong>Phone / WhatsApp:</strong> +92 348 6052881</p>
         <p><strong>Location:</strong> Hafizabad, Punjab, Pakistan</p>
         <p><strong>Email:</strong> harvestlaborersprayerhelpminis@gmail.com</p>
+    </div>
+
+    <!-- 9. Donate -->
+    <div class="container" id="donate">
+        <h2>9. Donate</h2>
+        <p>Donation arrangements will be updated here once legal process/registration is completed.</p>
     </div>
 
     <footer>
